@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  .react-resizable-handle {
+    height: 95%;
+    opacity: 0;
+  }
+  .box {
+    height: 95vh !important;
+  }
+  .dataTable {
+    height: 95vh;
+    overflow-y: scroll;
+    .tableRow {
+      cursor: pointer;
+      &.selectedRow {
+        background: linear-gradient(90deg, #95baf1 10%, #7795ad 90%);
+        color: #b50abe;
+      }
+    }
+    td {
+      white-space: nowrap;
+    }
+  }
+}
+
+.map-component {
+  width: 100%;
+  .map .leaflet-top {
+    display: none;
+  }
+  .leaflet-container {
+    height: 100vh;
+  }
+}
+
+.spinner {
+  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
